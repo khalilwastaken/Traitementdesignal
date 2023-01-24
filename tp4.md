@@ -49,20 +49,19 @@ signal est là pour le secourir :
 
 On trace le signal et sa transformée de fourrier : 
 
-![image](https://user-images.githubusercontent.com/98362303/214370535-1e4c823b-d2f0-407c-a6fb-e7560f51d435.png)
+![image](https://user-images.githubusercontent.com/98362303/214373056-5d9c42dc-db2c-4269-b1a2-e734f7ed5d22.png)
 
 On remarque que dans le spectre suivant il y a une fréquence entre 4000 et 6000 d'amplitude 2 qui constitue le bruit, pour l'éiminer on doit appliquer un 
 filtre passe bas qui nous permettra de diminuer l'intensité du bruit.
 
-On utilise la formule suivante :
-
-![image](https://user-images.githubusercontent.com/98362303/214371402-9b1fe6b4-aa8a-475a-9bf1-5a7a5a41a8ed.png)
+On utilise un filtre butterworth d'ordre 100 : 
 
 Spectre du signal apres l'application du filtre : 
 
-![image](https://user-images.githubusercontent.com/98362303/214370597-4d021246-7a20-403a-87fe-6a590f67610d.png)
+![image](https://user-images.githubusercontent.com/98362303/214372929-a7b3145e-2179-4064-87db-2c1f996650de.png)
 
-On remarque qu'on a pas pu éliminer le bruit.
+
+On remarque qu'on a pu éliminer le bruit.
 
 
 
