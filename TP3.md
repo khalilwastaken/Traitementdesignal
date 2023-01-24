@@ -46,16 +46,42 @@ Ensuite on procède a supprimer le bruit des mouvements du corps en utilisant un
 
 Souvent, l'ECG est contaminé par un bruit du secteur 50 Hz qui doit être supprimé
 
-![image](https://user-images.githubusercontent.com/98362303/214179332-25f97ef2-77ed-4e71-a1fa-b3cb39ddccf6.png)
+![image](https://user-images.githubusercontent.com/98362303/214358344-0a3a28b4-f09c-4342-9438-efef898d6649.png)
 
-On remarque qu'il y a un bruit 
+On remarque qu'il y a un bruit qu'on doit éliminer avec un filtrage notch 
+
+3 - Suppression des interférences des lignes électriques 50Hz : 
+
+![image](https://user-images.githubusercontent.com/98362303/214359747-f4ccc73c-85bf-41f7-9fc2-93dd02823720.png)
+
+On remarque que ce signal est encore bruité quand on le compare avec le signal ECG qu'on doit avoir.
+Pour eliminer ce bruit on applique un filtrage pass bas pour eliminer les bruits de basses fréquences.
+
+ECG 2 apres le filtrage notch avec ses spectres et le bruit qui doit etre eliminer 
+
+![image](https://user-images.githubusercontent.com/98362303/214360539-afaa8cad-c995-4688-b229-cbf37b9c2ab9.png)
 
 
+4 - Amélioration du rapport signal sur bruit :
+
+Apres avoir eliminer les filtres on obtient le signal suivant :
+
+![image](https://user-images.githubusercontent.com/98362303/214362201-3c3773b1-c859-4977-8c68-723102160ee8.png)
+
+5 - Identification de la fréquence cardiaque avec la fonction d'autocorrélation :
+
+La fréquence cardiaque peut être identifiée à partir de la fonction d'autocorrélation du signal ECG. Cela se fait en cherchant le premier maximum local après le maximum global (à tau = 0) de cette fonction.
+
+On utilise la fonction xcorr pour le signal ecg3 
+
+![image](https://user-images.githubusercontent.com/98362303/214362925-2c72a219-d38b-4908-8731-4b3a02a13301.png)
 
 
+On detecte une correlation dans un maximum a taux = 2 
 
 
-
+# Réalise par : Khalil Hamdaoui
+# Encadré par : Prof Ammour Alae
 
 
 
