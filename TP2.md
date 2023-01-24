@@ -58,7 +58,8 @@ Les notes de musique produites par un piano peuvent être synthétisées approxi
 
 
 
-
+# Réalise par : Khalil Hamdaoui
+# Encadré par : Prof Ammour Alae
 
 
 
