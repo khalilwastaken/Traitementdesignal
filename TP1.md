@@ -73,5 +73,6 @@ La difference entre le signal filté et le signal sans le cosinus de frequence 2
 A travers ce premier TP j’ai appris comment représenter des 
 signaux et leur TFD, et appliquer un filtrage idéal 
 
-
+# Réalise par : Khalil Hamdaoui
+# Encadré par : Prof Ammour Alae
 
